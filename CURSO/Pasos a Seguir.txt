@@ -1,0 +1,3 @@
+Crea una carpeta con tu nombre dentro de la carpeta "CURSOS" del repositorio de la cursada. https://github.com/DevJumpProf/Arbusta_PreIngreso
+Dentro de la carpeta con tu nombre, pegá una copia del archivo de éste ejercicio y complétalo con tu código
+Tene en cuenta la comunicación con las personas de la cursada, para no generar conflictos a la hora de actualizar el repositorio.
