@@ -1,4 +1,7 @@
 
+let condicion = true;
+let condicion2 = false;
+
 //Condicional simple
 
 if (condicion) {
