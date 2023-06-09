@@ -100,8 +100,9 @@ mediaNumeros = (numeroUno+numeroDos+numeroTres)/3;
 
 alert(`La media de los 3 números que ingresaste (${numeroUno}, ${numeroDos}, ${numeroTres}) es: ${parseInt(mediaNumeros)}`);
 
-/* 05-Escribe un programa que solicite a una persona ingresar el número de kilómetros recorridos por su coche, luego le pide el número de kilómetros recorridos. El script debe mostrar el consumo de combustible por kilómetro.
-Un problema matemático muy simple numero de litros dividido por número de kilómetros. */
+
+
+// ! 05-Escribe un programa que solicite a una persona ingresar el número de kilómetros recorridos por su coche, luego le pide el número de litros de gasolina consumidos. El script debe mostrar el consumo de combustible por kilómetro. Un problema matemático muy simple número de litros dividido por número de kilómetros. *
 
 /*Ayuda:
 La persona teclea
@@ -112,7 +113,14 @@ Has consumido 4 l/km */
 // tu solucion: 
 alert("CONSUMO DE GASOLINA");
 
-// ! PENDIENTE
+var gasolinaConsumida, kilometrosRecorridos, gasolinaConsumidaPorKilometro;
+
+kilometrosRecorridos = parseInt(prompt("Ingrese los kilometros que ha recorrido"));
+gasolinaConsumida = parseInt(prompt("Ahora ingrese la gasolina consumida"));
+gasolinaConsumidaPorKilometro = gasolinaConsumida/kilometrosRecorridos;
+
+
+alert(`Con base a la información que nos brindas, has recorrido '${kilometrosRecorridos}km' y has consumido '${gasolinaConsumidaPorKilometro}L' por kilometro recorrido`)
 
 /* 06- Cambio de unidades: en este ejercicio debes convertir a segundos una medida de tiempo dada en horas y minutos.
 Recuerda una hora son 6o minutos y cada minuto son 60 segundos. */
