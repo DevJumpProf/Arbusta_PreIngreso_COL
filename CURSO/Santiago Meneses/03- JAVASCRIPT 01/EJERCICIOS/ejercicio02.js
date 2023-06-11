@@ -254,13 +254,63 @@ alert(validarPositivoNegativo(numeroUsuarioAValidar));
 /* ayuda: Si  la persona elige entre el 5 y el 8, el programa devolverá 3 (8 - 5) */
 
 //solucion
+alert("DIFERENCIA DE NÚMEROS");
+
+var numRestaUno, numRestaDos;
+
+alert("A continuación ingrese los números que se van a restar");
+numRestaUno = parseFloat(prompt("Primer número"));
+numRestaDos = parseFloat(prompt("Segundo número"));
+
+function restaDeNumeros(numeroUno, numeroDos) {
+    return numeroUno - numeroDos;
+}
+
+alert(restaDeNumeros(numRestaUno, numRestaDos));
 
 /* 09-Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. 
-El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7. */
+El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por enc  ima de 7. */
 
 /* ayuda: Para las notas 6, 8, 10 la media es 8 por tanto se califica como Notable */
 
  //solucion:
+
+ alert("PROMEDIO DE ESTUDIANTE EN 3 TRIMESTRES");
+
+
+ function promedioAlumno() {
+     
+     let bandera = true;
+     let trimestreUno, trimestreDos, trimestreTres, promedio;
+ 
+     while (bandera) {
+         alert("A continuación ingrese las notas que sacó en cada uno de los trimestres");
+         trimestreUno = parseFloat(prompt("Nota del primer trimestre"));
+         trimestreDos = parseFloat(prompt("Nota del segundo trimestre"));
+         trimestreTres = parseFloat(prompt("Nota del tercer trimestre"));
+         if ((trimestreUno >= 0 && trimestreUno <= 10)&&(trimestreDos > 0 && trimestreDos <= 10)&&(trimestreTres > 0 && trimestreTres <= 10)) {
+             promedio = (trimestreUno + trimestreDos + trimestreTres) / (3);
+             bandera = false;
+         } else {
+             alert("Recuerda que las notas deben de estar entre 1 y 10, vuelve a intentar");
+         }
+     }
+     
+     if (promedio >= 0 && promedio < 5) {
+         mensaje = alert(`Lo sentimos, has suspendido 😔 tu promedio fue de ${promedio.toFixed(2)}`);
+     } else if (promedio >= 5 && promedio <= 7){
+         mensaje = alert(`Muy bien, has aprobado 😃 tu promedio fue de ${promedio.toFixed(2)}`);
+     } else {
+         mensaje = alert(`Excelente eres un/a Alumno/a notable 😎 tu promedio fue de ${promedio.toFixed(2)}`);
+     }
+     
+     
+     
+     return mensaje;
+ }
+ 
+ promedioAlumno();
+
 
 /* 10- Considera estás desarrollando un script donde trabajas con tipos de motor (suponemos que se trata del tipo de motor de una bomba para mover fluidos). 
 Crea una función denominada dimeTipoMotor() donde pidas el tipo de motor al usuario (indicando que los valores posibles son 1, 2, 3, 4) y a través de un condicional switch hagas lo siguiente:
@@ -280,3 +330,37 @@ f) Si no se cumple ninguno de los valores anteriores mostrar el mensaje “No ex
 /* ayuda: utlizar switch */
 
 // solucion
+
+alert("MOTOR DE BOMBAS 😎");
+
+function dimeTipoMotor() {
+    let opcionUsuario, mensaje;
+
+    alert("Bienvenido, vamos a validar que tipo de motores tenemos en el sistema.");
+    opcionUsuario = parseInt(prompt("Contamos con algunos tipos de motores, marca un número de 0 a 4 para validar cuál es."))
+
+    switch (opcionUsuario) {
+        case 0:
+            mensaje = alert("No hay establecido un valor definido para el tipo de bomba.”");
+            break;
+        case 1:
+            mensaje = alert("La bomba es una bomba de agua.");
+            break;
+        case 2:
+            mensaje = alert("La bomba es una bomba de gasolina.");
+            break;
+        case 3:
+            mensaje = alert("La bomba es una bomba de hormigón.");
+            break;
+        case 4:
+            mensaje = alert("La bomba es una bomba de pasta alimenticia.");
+            break;
+        default:
+            mensaje = alert("No existe un valor válido para tipo de bomba, recuerda, un valor de 0 a 4.")
+            break;
+    }
+
+    return mensaje;
+}
+
+dimeTipoMotor();
