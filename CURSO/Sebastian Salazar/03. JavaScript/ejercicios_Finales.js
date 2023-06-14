@@ -246,3 +246,74 @@ function devolverString(str) {
   function verificarPassword(usuario, password) {
     return usuario.password === password;
   }  
+
+  console.log(devolverString("Hello")); // Output: Hello
+
+console.log(suma(5, 3)); // Output: 8
+
+console.log(resta(10, 4)); // Output: 6
+
+console.log(multiplica(7, 6)); // Output: 42
+
+console.log(divide(15, 3)); // Output: 5
+
+console.log(sonIguales(5, 5)); // Output: true
+
+console.log(tienenMismaLongitud("hello", "world")); // Output: true
+
+console.log(menosQueNoventa(80)); // Output: true
+
+console.log(mayorQueCincuenta(60)); // Output: true
+
+console.log(obtenerResto(10, 3)); // Output: 1
+
+console.log(esPar(4)); // Output: true
+
+console.log(esImpar(3)); // Output: true
+
+console.log(esPositivo(10)); // Output: "Es positivo"
+
+console.log(agregarSimboloExclamacion("Hello")); // Output: "Hello!"
+
+console.log(combinarNombres("John", "Doe")); // Output: "John Doe"
+
+console.log(obtenerSaludo("Alice")); // Output: "Hola Alice!"
+
+console.log(obtenerAreaRectangulo(5, 8)); // Output: 40
+
+console.log(retornarPerimetro(5)); // Output: 20
+
+console.log(areaDelTriangulo(6, 4)); // Output: 12
+
+console.log(deEuroAdolar(10)); // Output: 12
+
+console.log(esVocal("a")); // Output: "Es vocal"
+
+console.log(obtenerMayor(8, 12)); // Output: 12
+
+console.log(mayoriaDeEdad(20)); // Output: "Allowed"
+
+console.log(conection(2)); // Output: "Away"
+
+console.log(saludo("ingles")); // Output: "Hello!"
+
+console.log(colors("red")); // Output: "This is red"
+
+console.log(esDiezOCinco(10)); // Output: true
+
+console.log(estaEnRango(30)); // Output: true
+
+console.log(fizzBuzz(15)); // Output: "fizzbuzz"
+
+console.log(operadoresLogicos(5, 8, 10)); // Output: 11
+
+console.log(esVerdadero(true)); // Output: "Soy verdadero"
+
+console.log(doWhile(3)); // Output: 38
+
+console.log(diaDeLaSemana(1)); // Output: "Es fin de semana"
+
+var usuario = nuevoUsuario("John Doe", "john@example.com", "password");
+console.log(tieneEmail(usuario)); // Output: true
+
+console.log(verificarPassword(usuario, "password")); // Output: true

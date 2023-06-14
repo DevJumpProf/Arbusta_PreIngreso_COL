@@ -77,7 +77,7 @@ Hola Juan. */
 // tu solucion: 
 
 
-let nombre = prompt("Escribe tu nombre");
+let nombre = "juan"
 
 // Mostrar el saludo
 console.log("Hola " + nombre + ".");
@@ -116,8 +116,8 @@ Has consumido 4 l/km */
 // tu solucion: 
 
 
-let litros = parseFloat(prompt("Ingrese el número de litros de combustible consumidos:"));
-let kilometros = parseFloat(prompt("Ingrese el número de kilómetros recorridos:"));
+let litros = 20;
+let kilometros = 80;
 
 
 let consumo = litros / kilometros;
@@ -136,8 +136,8 @@ Resultado 2*60*60 + 30*60 = 9000 segundos */
 /* tu solucion:  */
 
 
-let horas = parseInt(prompt("Ingrese el número de horas:"));
-let minutos = parseInt(prompt("Ingrese el número de minutos:"));
+let horas = 2;
+let minutos = 30;
 
 
 let segundos = horas * 60 * 60 + minutos * 60;
