@@ -91,7 +91,7 @@ function escribirCadena(letra, num) {
     for (let i = 1; i <= num; i += 1) {
         letras.push(letra);
     }
-    let resultado = letras.join("");  //Uno los números del objeto con comas
+    let resultado = letras.join("");  //Hago la unión de los valores de mi lista
     console.log(`Cadena de ${num} veces la letra ${letra}: ${resultado}`);
 }
 
@@ -148,8 +148,9 @@ function escribirLista(num) {
         numeros.push(i);
         i += 1;
     }
+    let resultado = numeros.join(",");  //Uno los números del objeto con comas
     //alert(`Conteo: ${numeros}`);      --> Así se mostraría con el alert, pero lo muestro por consola para no crashear la terminal
-    console.log(`Conteo: ${numeros}`);
+    console.log(`Conteo: ${resultado}`);
 }
 
 //escribirLista(parseInt(prompt("Ingrese un número: ")));  --> Al usar prompt la terminal se crashea, entonces paso el número como parámetro
