@@ -295,7 +295,15 @@ function diaDeLaSemana(numeroDeDia) {
 
 console.log(diaDeLaSemana(1)); // Output: "Es fin de semana"
 
-var usuario = nuevoUsuario("John Doe", "john@example.com", "password");
-console.log(tieneEmail(usuario)); // Output: true
+function verificarPassword(usuario, password) {
+  return usuario.password === password;
+}
+var usuario = {
+  nombre: "Sebastiam ",
+  email: "john@example.com",
+  password: "sd1233"
+};
 
-console.log(verificarPassword(usuario, "password")); // Output: true
+var inputPassword = "sd1233";
+
+console.log(verificarPassword(usuario, inputPassword));
