@@ -230,4 +230,5 @@ let estudiante = {
 let media = (estudiante.notaIngles + estudiante.notaProgramacion + estudiante.notaHTML)/3
 console.log(`La media de ${estudiante.nombre} es ${media}`)
 
+console.log("                                                                                                     ")
 
